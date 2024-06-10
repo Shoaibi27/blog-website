@@ -1,0 +1,262 @@
+/* google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+    flex-direction: column;
+    font-family: 'Outfit';
+    /*background: linear-gradient(#ffdad5, #fff7f9);*/
+}
+
+nav {
+    background-color: lightblue;
+    background: linear-gradient(to right, #00093c, #2d0b00); 
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed; 
+    margin-bottom: 2px;
+    top: 0;
+    z-index: 49;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.company-logo img {
+    
+    width: 180px;
+    
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.theme-text {
+  color: #474af0;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+.card {
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover {
+  color: white;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: #474af0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::before {
+  left: 0%;
+  color: white;
+}
+.container-fluid {
+  background-image: url("blob-scene-haikei.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*footer*/ 
+footer{
+    width: 100%;
+    bottom: 0%;
+    color: rgb(255, 255, 255);
+    /* padding: 100px 0 30px; */
+    font-family: "Poppins", sans-serif;
+    font-family: 'Outfit';
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    font-size: 13px;
+    line-height: 15px;
+    border-bottom: black;
+    margin-top: auto;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .bi{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .bi{
+    font-size: 16px;
+    color: #ccc;
+
+}
+
+.social-icons .bi{
+    width: 40px;
+    height: 40px;
+    border-radius: 1000%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0%;
+    overflow: hidden;
+    
+}
+.underline span{
+    background: white;
+    animation: moving 2s linear infinite;
+    width: 15px;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    border-radius: 3px;
+    position: absolute;
+
+   
+    
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+@media(max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
